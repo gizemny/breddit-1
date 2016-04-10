@@ -18,7 +18,7 @@ var SubbredditsListView = Backbone.View.extend({
 			var subbreddit = new SubbredditModel({id: subbredditId});
 			subbreddit.fetch({
 				success: function() {
-					var PostsListView = require('./postsListView.js');
+					var PostsListView = require('./PostsListView.js');
 					var postsListView = new PostsListView({ 
 						collection: subbreddit.get('posts')
 					});
@@ -39,4 +39,3 @@ var SubbredditsListView = Backbone.View.extend({
 });
 
 module.exports = SubbredditsListView;
-

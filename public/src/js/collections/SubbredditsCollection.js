@@ -1,6 +1,6 @@
 var Backbone = require('backbone');
 
-var SubbredditModel = require('../models/SubbredditModel');
+var SubbredditModel = require('../models/SubbredditModel.js');
 
 var SubbredditsCollection = Backbone.Collection.extend({
 	url: '/api/subbreddits/',
